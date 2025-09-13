@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tutorial</title>
+        <style>
+            .alert{
+                   color: aqua;
+                   background: rgb(247, 233, 154);
+                   padding : 5px;
+            }
+        </style>
+    </head>
+<body>
+<header>
+    <h1 id = "heading">Welcome to DOM </h1>
+    <p> GOOD WORK !!</p>
+</header>
+<p> GOOD JOB !!</p>
+<script>
+    /*First step:- Do this step first*/
+    let div = document.createElement('div');
+    div.id= "paragraph"
+    div.className = "alert";
+    div.innerHTML = "<p>Congrats ! YOU HAVE CREATED A DIV. </p>";
+    document.body.append(div);
+
+    /*Second Step:- Do this after Compeleting second step*/
+    let heading = document.getElementById("heading"); 
+    heading.innerHTML = '&#128512';
+
+    /*Third step:- Do this after compeleting second step*/
+    document.querySelector('header p').innerHTML = "<strong Good Job! </strong>"
+</script>
+
+
+</html>
+</body>
